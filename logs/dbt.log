@@ -1,0 +1,171 @@
+[0m14:47:38.168844 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ae42dcd46e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ae42fda07d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ae42c823890>]}
+
+
+============================== 14:47:38.182212 | 25973493-02c3-49fa-ba79-86676351b56f ==============================
+[0m14:47:38.182212 [info ] [MainThread]: Running with dbt=1.12.0-b3
+[0m14:47:38.183273 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt init weather_dbt', 'fail_fast': 'False', 'partial_parse': 'True', 'warn_error': 'None', 'profiles_dir': '/home/walid/.dbt', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'maximum_seed_size_mib': '1', 'quiet': 'False', 'use_experimental_parser': 'False', 'no_print': 'None', 'log_format': 'default', 'target_path': 'None', 'version_check': 'True', 'static_parser': 'True', 'debug': 'False', 'empty': 'None', 'printer_width': '80', 'log_path': 'logs', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'introspect': 'True', 'use_colors': 'True'}
+[0m14:47:38.440944 [info ] [MainThread]: Creating dbt configuration folder at /home/walid/.dbt
+[0m14:47:38.484897 [debug] [MainThread]: Starter project path: /mnt/d/walid/Formation Data Engineer OpenClassromm/Chapitre 8/forecast_pipeline/dbt-env/lib/python3.14/site-packages/dbt/include/starter_project
+[0m14:47:38.802842 [info ] [MainThread]: Setting up your profile.
+[0m14:49:19.942916 [info ] [MainThread]: Profile weather_dbt written to /home/walid/.dbt/profiles.yml using target's profile_template.yml and your supplied values.
+[0m14:49:19.958237 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m14:49:19.959498 [info ] [MainThread]: dbt version: 1.12.0-b3
+[0m14:49:19.960554 [info ] [MainThread]: python version: 3.14.4
+[0m14:49:19.961552 [info ] [MainThread]: python path: /mnt/d/walid/Formation Data Engineer OpenClassromm/Chapitre 8/forecast_pipeline/dbt-env/bin/python3
+[0m14:49:19.962507 [info ] [MainThread]: os info: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.43
+[0m14:49:19.989716 [info ] [MainThread]: Using profiles dir at /home/walid/.dbt
+[0m14:49:19.990727 [info ] [MainThread]: Using profiles.yml file at /home/walid/.dbt/profiles.yml
+[0m14:49:19.991639 [info ] [MainThread]: Using dbt_project.yml file at /mnt/d/walid/Formation Data Engineer OpenClassromm/Chapitre 8/forecast_pipeline/weather_dbt/dbt_project.yml
+[0m14:49:20.003080 [info ] [MainThread]: adapter type: postgres
+[0m14:49:20.004270 [info ] [MainThread]: adapter version: 1.10.2
+[0m14:49:20.098989 [info ] [MainThread]: Configuration:
+[0m14:49:20.101022 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:49:20.101845 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m14:49:20.102604 [info ] [MainThread]: Required dependencies:
+[0m14:49:20.103696 [debug] [MainThread]: Executing "git --help"
+[0m14:49:20.128897 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:49:20.130123 [debug] [MainThread]: STDERR: "b''"
+[0m14:49:20.130885 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:49:20.131557 [info ] [MainThread]: Connection:
+[0m14:49:20.132547 [info ] [MainThread]:   host: localhost
+[0m14:49:20.133468 [info ] [MainThread]:   port: 5432
+[0m14:49:20.134280 [info ] [MainThread]:   user: admin
+[0m14:49:20.135050 [info ] [MainThread]:   database: weather_db
+[0m14:49:20.135924 [info ] [MainThread]:   schema: public
+[0m14:49:20.136843 [info ] [MainThread]:   connect_timeout: 10
+[0m14:49:20.137667 [info ] [MainThread]:   role: None
+[0m14:49:20.138448 [info ] [MainThread]:   search_path: None
+[0m14:49:20.139432 [info ] [MainThread]:   keepalives_idle: 0
+[0m14:49:20.140340 [info ] [MainThread]:   sslmode: None
+[0m14:49:20.141178 [info ] [MainThread]:   sslcert: None
+[0m14:49:20.142089 [info ] [MainThread]:   sslkey: None
+[0m14:49:20.142930 [info ] [MainThread]:   sslrootcert: None
+[0m14:49:20.143636 [info ] [MainThread]:   application_name: dbt
+[0m14:49:20.144350 [info ] [MainThread]:   retries: 1
+[0m14:49:20.147201 [info ] [MainThread]: Registered adapter: postgres=1.10.2
+[0m14:49:28.951067 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m14:49:31.949658 [debug] [MainThread]: Using postgres connection "debug"
+[0m14:49:31.950730 [debug] [MainThread]: On debug: select 1 as id
+[0m14:49:31.951561 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:49:31.994618 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "localhost" (127.0.0.1), port 5432 failed: FATAL:  password authentication failed for user "admin"
+
+[0m14:49:32.004745 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m14:49:32.005557 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m14:49:32.006320 [debug] [MainThread]: On debug: No close available on handle
+[0m14:49:32.006987 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m14:49:32.007790 [info ] [MainThread]: [31m1 check failed:[0m
+[0m14:49:32.008642 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "localhost" (127.0.0.1), port 5432 failed: FATAL:  password authentication failed for user "admin"
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m14:49:32.009588 [info ] [MainThread]: Your new dbt project "weather_dbt" was created!
+Initialized new project in /mnt/d/walid/Formation Data Engineer OpenClassromm/Chapitre 8/forecast_pipeline/weather_dbt/weather_dbt
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:49:32.010612 [info ] [MainThread]: [31mYour profile may need adjustments. You can find the logs of `dbt debug` above[0m
+[0m14:49:32.015010 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 113.952095, "process_in_blocks": "43376", "process_kernel_time": 2.703897, "process_mem_max_rss": "135684", "process_out_blocks": "8", "process_user_time": 2.332602}
+[0m14:49:32.015919 [debug] [MainThread]: Command `dbt init` succeeded at 14:49:32.015777 after 113.95 seconds
+[0m14:49:32.016669 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m14:49:32.017384 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ae42ca5a780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ae42b3e5250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ae42b3158c0>]}
+[0m14:49:32.018377 [debug] [MainThread]: Flushing usage events
+[0m14:49:32.436021 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:18:31.002863 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7329c6ccc6e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7329c8d94690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7329c581b890>]}
+
+
+============================== 17:18:31.020589 | 31963dd3-9485-47d6-8afa-2bbf7f1d5c5e ==============================
+[0m17:18:31.020589 [info ] [MainThread]: Running with dbt=1.12.0-b3
+[0m17:18:31.021655 [debug] [MainThread]: running dbt with arguments {'empty': 'None', 'version_check': 'True', 'cache_selected_only': 'False', 'introspect': 'True', 'fail_fast': 'False', 'printer_width': '80', 'use_colors': 'True', 'static_parser': 'True', 'no_print': 'None', 'indirect_selection': 'eager', 'profiles_dir': '/home/walid/.dbt', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'target_path': 'None', 'partial_parse': 'True', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_path': 'logs', 'maximum_seed_size_mib': '1', 'write_json': 'True', 'log_cache_events': 'False', 'quiet': 'False', 'log_format': 'default'}
+[0m17:18:31.477752 [info ] [MainThread]: dbt version: 1.12.0-b3
+[0m17:18:31.478953 [info ] [MainThread]: python version: 3.14.4
+[0m17:18:31.479795 [info ] [MainThread]: python path: /mnt/d/walid/Formation Data Engineer OpenClassromm/Chapitre 8/forecast_pipeline/dbt-env/bin/python3
+[0m17:18:31.480538 [info ] [MainThread]: os info: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.43
+[0m17:18:31.965189 [info ] [MainThread]: Using profiles dir at /home/walid/.dbt
+[0m17:18:31.966195 [info ] [MainThread]: Using profiles.yml file at /home/walid/.dbt/profiles.yml
+[0m17:18:31.967438 [info ] [MainThread]: Using dbt_project.yml file at /mnt/d/walid/Formation Data Engineer OpenClassromm/Chapitre 8/forecast_pipeline/dbt_project.yml
+[0m17:18:31.981074 [info ] [MainThread]: adapter type: postgres
+[0m17:18:31.981979 [info ] [MainThread]: adapter version: 1.10.2
+[0m17:18:31.983539 [info ] [MainThread]: Configuration:
+[0m17:18:31.984495 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m17:18:31.985398 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m17:18:31.986606 [info ] [MainThread]: Required dependencies:
+[0m17:18:31.988100 [debug] [MainThread]: Executing "git --help"
+[0m17:18:31.994366 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m17:18:31.995200 [debug] [MainThread]: STDERR: "b''"
+[0m17:18:31.995847 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m17:18:31.996663 [info ] [MainThread]: Connection:
+[0m17:18:31.997498 [info ] [MainThread]:   host: localhost
+[0m17:18:31.998338 [info ] [MainThread]:   port: 5432
+[0m17:18:31.999063 [info ] [MainThread]:   user: admin
+[0m17:18:31.999859 [info ] [MainThread]:   database: weather_db
+[0m17:18:32.000635 [info ] [MainThread]:   schema: public
+[0m17:18:32.001292 [info ] [MainThread]:   connect_timeout: 10
+[0m17:18:32.001936 [info ] [MainThread]:   role: None
+[0m17:18:32.002781 [info ] [MainThread]:   search_path: None
+[0m17:18:32.003762 [info ] [MainThread]:   keepalives_idle: 0
+[0m17:18:32.004802 [info ] [MainThread]:   sslmode: None
+[0m17:18:32.005863 [info ] [MainThread]:   sslcert: None
+[0m17:18:32.006969 [info ] [MainThread]:   sslkey: None
+[0m17:18:32.007949 [info ] [MainThread]:   sslrootcert: None
+[0m17:18:32.008741 [info ] [MainThread]:   application_name: dbt
+[0m17:18:32.009486 [info ] [MainThread]:   retries: 1
+[0m17:18:32.012867 [info ] [MainThread]: Registered adapter: postgres=1.10.2
+[0m17:18:41.830635 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m17:18:48.854887 [debug] [MainThread]: Using postgres connection "debug"
+[0m17:18:48.855855 [debug] [MainThread]: On debug: select 1 as id
+[0m17:18:48.856667 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:18:48.935695 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "localhost" (127.0.0.1), port 5432 failed: FATAL:  password authentication failed for user "admin"
+
+[0m17:18:48.946607 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m17:18:48.947619 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m17:18:48.948541 [debug] [MainThread]: On debug: No close available on handle
+[0m17:18:48.949572 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m17:18:48.950676 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m17:18:48.951620 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </mnt/d/walid/Formation Data Engineer OpenClassromm/Chapitre 8/forecast_pipeline/dbt_project.yml> not found
+
+[0m17:18:48.952598 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "localhost" (127.0.0.1), port 5432 failed: FATAL:  password authentication failed for user "admin"
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m17:18:48.956918 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 18.047348, "process_in_blocks": "27760", "process_kernel_time": 3.233565, "process_mem_max_rss": "134196", "process_out_blocks": "8", "process_user_time": 2.299808}
+[0m17:18:48.958167 [debug] [MainThread]: Command `dbt debug` failed at 17:18:48.957887 after 18.05 seconds
+[0m17:18:48.959145 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m17:18:48.960163 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7329c56efce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7329c56fe210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7329c56c9f20>]}
+[0m17:18:48.961130 [debug] [MainThread]: Flushing usage events
+[0m17:18:49.381707 [debug] [MainThread]: An error was encountered while trying to flush usage events
