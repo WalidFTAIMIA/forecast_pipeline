@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: weather_raw
+    schema: public
+
+    tables:
+      - name: raw_ichtegem
+      - name: raw_la_madeleine
+      - name: raw_infoclimat
