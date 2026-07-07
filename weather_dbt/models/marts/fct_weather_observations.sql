@@ -1,3 +1,13 @@
+{{
+  config(
+    materialized='table',
+    indexes=[
+      {'columns': ['station_id']},
+      {'columns': ['observation_time']}
+    ]
+  )
+}}
+
 select
     station_id,
     observation_time,

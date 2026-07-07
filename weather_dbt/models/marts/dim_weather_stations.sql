@@ -1,3 +1,12 @@
+{{
+  config(
+    materialized='table',
+    indexes=[
+      {'columns': ['station_id'], 'unique': true}
+    ]
+  )
+}}
+
 select
     'ILAMAD25' as station_id,
     'La Madeleine' as station_name,
@@ -11,11 +20,11 @@ select
 union all
 
 select
-    'IICHTE19',
-    'WeerstationBS',
-    51.092,
-    2.999,
-    15,
-    'Ichtegem',
-    'other',
-    'EasyWeatherV1.6.6'
+    'IICHTE19' as station_id,
+    'WeerstationBS' as station_name,
+    51.092 as latitude,
+    2.999 as longitude,
+    15 as elevation,
+    'Ichtegem' as city,
+    'other' as hardware,
+    'EasyWeatherV1.6.6' as software
