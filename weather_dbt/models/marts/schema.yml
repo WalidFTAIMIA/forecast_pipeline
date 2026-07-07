@@ -1,6 +1,7 @@
 version: 2
 
 models:
+
   - name: dim_weather_stations
     columns:
       - name: station_id
@@ -13,6 +14,10 @@ models:
       - name: station_id
         tests:
           - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_weather_stations')
+                field: station_id
 
       - name: observation_time
         tests:
